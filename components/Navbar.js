@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 const Nav = styled.nav`
   background: #FEFEFE;
@@ -40,8 +41,8 @@ const Navbar = () => {
         <Nav>
           <div className="container">
               <NavbarItem>
-                  <Logo>NEXT | BLOG</Logo>
-                  <AddPostBtn>Добавить статью</AddPostBtn>
+                  <Link href={'/'}><Logo>NEXT | BLOG</Logo></Link>
+                  <Link href={'/add-post'}><AddPostBtn>Добавить статью</AddPostBtn></Link>
               </NavbarItem>
           </div>
         </Nav>

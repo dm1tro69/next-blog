@@ -60,9 +60,11 @@ export default function Home() {
         <Wrapper>
            <div className="container">
                <PostsWrapper>
-                 <Post bgImage={'./static/images/1.jpg'}>
-                   <PostTitle>Мальдивы. Рай или пафос ? </PostTitle>
-                 </Post>
+                 <Link href={'/post/[id]'} as={`/post/test-route`}>
+                     <Post bgImage={'./static/images/1.jpg'}>
+                         <PostTitle>Мальдивы. Рай или пафос ? </PostTitle>
+                     </Post>
+                 </Link>
                    <Post bgImage={'./static/images/2.jpg'}>
                        <PostTitle>Италия. Остров Капри. Обзор. </PostTitle>
                    </Post>
